@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Viral Video Maker - 1 Page Report
 
-## Getting Started
+Challenge Tackled:
+Short-form video platforms like TikTok, YouTube Shorts, and Instagram Reels thrive on speed, trends,
+and creativity—but producing viral-ready content requires scripting, editing, formatting, and publishing
+skills that most creators can’t do instantly. Our challenge: build an AI-driven pipeline that turns an idea
+into a platform-ready, trend-optimized short video in minutes, lowering the barrier to viral content
+creation.
 
-First, run the development server:
+Tools / ML Models Used:
+- Next.js + Tailwind CSS – Frontend UI framework & styling
+- Zustand – State management
+- OpenAI GPT-4 – Script generation with hashtags, hooks, and style adaptation
+- Replicate API / Pika / Runway (mock) – AI video generation
+- React-Player – Video preview
+- CapCut API / FFmpeg (mock) – Remixing top-performing videos
+- Google Trends + TikTok Creative Center (mock) – Predictive trend radar
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+What Worked Well:
+- Fully functional idea → script → video preview → publish simulation flow in under 8 hours
+- Dynamic script generation with embedded trends and hashtags
+- Smooth UI transitions and remix mode to generate multiple variants
+- Modular architecture allowed rapid feature addition
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+What Was Challenging:
+- Integrating real publishing APIs (TikTok/YouTube) within hackathon constraints — solved via mock
+simulation
+- AI video generation latency — used mock URLs to ensure demo reliability
+- Limited real-time trend API access — substituted with static data + Google Trends simulation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+How You Spent Your Time:
+0–1h: Project setup, architecture, UI scaffolding
+1–2h: Script generation engine
+2–3h: Video generation pipeline
+3–4h: One-click publish system (mock)
+4–5h: Feedback loop & analytics
+5–6h: AI trend radar (stretch goal)
+6–7h: UI polish & remix mode
+7–8h: Demo prep & dashboard
+Reflection
+If we had 24 more hours, we’d integrate real publishing APIs and train a custom style-aware video
+generator for faster, higher-quality outputs.
